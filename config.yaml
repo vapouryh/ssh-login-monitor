@@ -1,0 +1,5 @@
+ssh_config:
+  host: host_here
+  port: port_here
+  username: username_here
+  servername: servername_here

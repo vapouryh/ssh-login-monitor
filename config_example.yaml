@@ -1,0 +1,5 @@
+ssh_config_example:
+  host: enter_ip_address_here #This is the public ip address or server name you want to connect to.
+  port: enter_port-here (Most Likely Port 22) #This is the port your server is on
+  user: enter_username_here #This is the username you connect to the server with
+  severname: enter_servername_here
