@@ -3,3 +3,4 @@ ssh_config_example:
   port: enter_port-here (Most Likely Port 22) #This is the port your server is on
   user: enter_username_here #This is the username you connect to the server with
   severname: enter_servername_here #This is a placeholder name for your server (eg. server1)
+  key_path: enter_the_key_path_here #The key_path config is only for ssh key users. If you dont use ssh keys then leave this blank. If you do enter the file path of your ssh key file (.ppk, .txt, id_rsa, etc.)

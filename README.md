@@ -4,7 +4,7 @@ See the releases tab on the [GitHub Page](https://github.com/vapouryh/ssh-login-
 
 **Prerequisites:**
 
-1. You must have at least Python 3.9 with pip/pip3
+1. You must have at least Python 3.9 with pip/pip3 [INSTALL HERE](https://www.python.org/downloads/)
 2. Have an Ubuntu Server with an account that has sudo commands/access (Program hasn't been tested on other Linux Software)
 
 **To Setup:**
@@ -22,4 +22,6 @@ See the releases tab on the [GitHub Page](https://github.com/vapouryh/ssh-login-
 
 **Disclaimer**: You may have to install all the dependencies if not installed by the setup.
 
-_**Update coming soon for private key users.**_
+_**New update [v1.2](https://github.com/vapouryh/ssh-login-monitor/releases/tag/v1.2) for private key users.**_
+
+_**To configure the private key simply edit the config file to the path where your key is located.**_

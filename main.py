@@ -16,17 +16,16 @@ def main():
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
         server_pw = getpass.getpass("Enter the password for your account %s on %s:" % (cfg['ssh_config']['username'], cfg['ssh_config']['host']))
-        ssh.connect(hostname = cfg['ssh_config']['host'], username = cfg['ssh_config']['username'], port = cfg['ssh_config']['port'], password = server_pw)
+        ssh.connect(hostname = cfg['ssh_config']['host'], username = cfg['ssh_config']['username'], port = cfg['ssh_config']['port'], password = server_pw, key_filename= cfg['ssh_config']['key_path'])
 
-        interact = SSHClientInteraction(ssh, display=False)
-        interact.send(command)
-        time.sleep(2)
-        interact.send(server_pw + "\n")
-        time.sleep(2)
+        stdin, stdout, stderr = ssh.exec_command(command, get_pty=True)
 
-        with open(interact.tail(line_prefix=cfg['ssh_config']['servername']+': ', timeout=threading.TIMEOUT_MAX)) as tail:
-            for line in tail:
-                print(line)
+        time.sleep(2)
+        stdin.write(server_pw + "\n")
+        stdin.flush()
+
+        for line in iter(stdout.readline, ""):
+            print(line, end="")
 
     except KeyboardInterrupt:
         print('Ctrl+C interruption detected, stopping tail')

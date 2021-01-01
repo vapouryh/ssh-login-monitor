@@ -2,4 +2,5 @@ ssh_config:
   host: 
   port: 
   username: 
-  servername: 
+  servername:
+  key_path:
