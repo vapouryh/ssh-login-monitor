@@ -1,3 +1,13 @@
+#                     GNU GENERAL PUBLIC LICENSE
+#                       Version 3, 29 June 2007
+#                       
+# SSH Login Monitor - Monitors your login info on linux sever.
+# Copyright (C) 2021 - vapouryh
+#
+# Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+# Everyone is permitted to copy and distribute verbatim copies
+# of this license document, but changing it is not allowed.
+
 ssh_config_example:
   host: enter_ip_address_here #This is the public ip address or server name you want to connect to.
   port: enter_port-here (Most Likely Port 22) #This is the port your server is on
