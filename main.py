@@ -1,3 +1,13 @@
+#                     GNU GENERAL PUBLIC LICENSE
+#                       Version 3, 29 June 2007
+#                       
+# SSH Login Monitor - Monitors your login info on linux sever.
+# Copyright (C) 2021 - vapouryh
+#
+# Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+# Everyone is permitted to copy and distribute verbatim copies
+# of this license document, but changing it is not allowed.
+
 import yaml, paramiko, getpass, time, threading
 from paramiko_expect import SSHClientInteraction
 
