@@ -26,11 +26,7 @@ def main():
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
         server_pw = getpass.getpass("Enter the password for your account %s on %s:" % (cfg['ssh_config']['username'], cfg['ssh_config']['host']))
-        try: 
-            ssh.connect(hostname = cfg['ssh_config']['host'], username = cfg['ssh_config']['username'], port = cfg['ssh_config']['port'], password = server_pw, key_filename= cfg['ssh_config']['key_path'])
-        except TimeoutError:
-            print("Operation timed out. Check password and/or try again.")
-            exit()
+        ssh.connect(hostname = cfg['ssh_config']['host'], username = cfg['ssh_config']['username'], port = cfg['ssh_config']['port'], password = server_pw, key_filename= cfg['ssh_config']['key_path'])
 
         stdin, stdout, stderr = ssh.exec_command(command, get_pty=True)
 
