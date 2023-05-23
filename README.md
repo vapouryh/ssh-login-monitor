@@ -1,3 +1,5 @@
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Programming Language](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![GitHub](https://img.shields.io/github/license/vapouryh/ssh-login-monitor?style=for-the-badge)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/vapouryh/ssh-login-monitor?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/vapouryh/ssh-login-monitor?style=for-the-badge)
