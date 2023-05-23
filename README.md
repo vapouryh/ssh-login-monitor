@@ -1,3 +1,5 @@
+![GitHub all releases](https://img.shields.io/github/downloads/vapouryh/ssh-login-monitor/total?style=for-the-badge)
+
 **To install:**
 
 See the releases tab on the [GitHub Page](https://github.com/vapouryh/ssh-login-monitor) or [CLICK HERE](https://github.com/vapouryh/ssh-login-monitor/releases)
