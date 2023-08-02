@@ -1,6 +1,6 @@
 bcrypt==4.0.1
 cffi==1.15.1
-cryptography==41.0.0
+cryptography==41.0.3
 paramiko==3.1.0
 paramiko-expect==0.3.5
 pycparser==2.21
